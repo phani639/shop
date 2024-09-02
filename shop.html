@@ -1,0 +1,678 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.bundle.min.js"></script>
+    <style>
+    header {
+        display: flex;
+        justify-content: space-around;
+        background-color: gray;
+        padding: 10px;
+        cursor: pointer;
+    }
+    h1 {
+        font-size: 25px;
+        font-weight: bold;
+        font-family: 'Times New Roman';
+    }
+    .parent {
+        position: relative;
+        margin-top: 21px;
+    }
+    span {
+        margin-left: 13px;
+        font-weight: bold;
+    }
+    .content {
+        position: relative;
+        margin-top: 21px;
+    }
+    article {
+        text-align: center;
+        margin-top: 10px;
+        background-color: black;
+        color: white;
+        padding: 10px;
+    }
+    .bi-lightning-fill {
+        color: gold;
+    }
+    .d {
+        display: grid;
+        grid-template-columns: 4fr 4fr 4fr;
+    }
+    .pg {
+        display: flex;
+        margin-top: 10px;
+        justify-content: space-evenly;
+    }
+    main  {
+        display: flex;
+        justify-content: space-evenly;
+        position: relative;
+        top: -450px;
+        cursor: cell;
+    }
+    .lp {
+        text-align: center;
+        margin-top: 25px;
+        color: gray;
+        font-size: 13px;
+    }
+    h3 {
+        font-size: 30px;
+        font-weight: bold;
+        color: red;
+        cursor: pointer;
+    }
+    #op {
+        font-size: 12px;
+        color: gray;
+        margin-top: 5px;
+    }
+    .local {
+        margin-top: 10px;
+        text-align: center;
+    }
+    #s {
+        position: relative;
+        top: -650px;
+        text-align: center;
+        left: 200px;
+        font-size: 25px;
+        color: white;
+        font-weight: bold;
+    }
+    #w {
+        position: relative;
+        top: -650px;
+        text-align: center;
+        left: 320px;
+        font-size: 25px;
+        font-weight: bold;
+        color: white;
+    }
+    #h {
+        position: relative;
+        top: -325px;
+        text-align: center;
+        left: -310px;
+        font-size: 25px;
+        color: white;
+    }
+    #m {
+        position: relative;
+        top: -325px;
+        text-align: center;
+        left: 115px;
+        font-size: 25px;
+        color: white;
+    }
+    h2 {
+        text-align: center;
+        color: blue;
+        font-weight: bold;
+    }
+    .n {
+        text-align: center;
+        text-decoration: underline;
+    }
+    .a {
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+    }
+    #gg {
+        border: 1px solid;
+        border-radius: 5px;
+        padding: 5px;
+        position: relative;
+        top: -290px;
+        left: 150px;
+    }
+    #hh {
+        border: 1px solid;
+        border-radius: 5px;
+        padding: 5px;
+        position: relative;
+        top: -300px;
+        left: 700px;
+        background-color: goldenrod;
+        color: white;
+    }
+    .price {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .llp {
+        margin-top: 10px;
+    }
+    .kk {
+        text-align: center;
+        text-decoration: underline;
+        margin-top: 30px;
+        font-weight: bold;
+        margin-bottom: 40px;
+    }
+    .left {
+        border: 1px solid red;
+        height: 450px;
+        width: 1500px;
+        background-image: url(img1.jpg);
+        background-size: cover;
+        cursor: pointer;
+    }
+    .right {
+        font-size: 30px;
+        font-weight: bold;
+        padding-left: 40px;
+        margin-top: 200px;
+        margin-left: 300px;        
+    }
+    .lol {
+        margin-left: 400px;
+        padding: 5px;
+    }
+    .btn-outline-secondary {
+        border-radius: 15px;
+        background-color: lightgreen;
+        color: black;
+    }
+    .oo {
+        text-align: center;
+        margin-top: 30px;
+    }
+    #po {
+        color: gray;
+    }
+    #lo {
+        font-size: 20px;
+        font-family: Arial;
+        margin-top: 10px;
+    }
+    .pm {
+        border: 1px solid red;
+        width: 200px;
+        height: 200px;
+        margin-right: 5px;
+    }
+    .cm {
+        border: 1px solid red;
+        width: 200px;
+        height: 200px;
+    }
+    .vm {
+        border: 1px solid red;
+        width: 200px;
+        height: 200px;
+        margin-left: 5px;
+    }
+    .dj {
+        display: flex;
+        margin-top: 20px;
+        justify-content: center;
+    }
+    .z {
+        position: relative;
+        left: -50px;
+    }
+    .vi {
+        position: relative;
+        left: -70px;
+    }
+    .zi {
+        position: relative;
+        left: -90px;
+    }
+    .llp {
+        margin-top: 25px;
+    }
+    #pl {
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+    .ff {
+        font-size: 11px;
+        position: relative;
+        left: 70px;
+        top: -40px;
+    }
+    .off {
+        font-size: 13px;
+        position: relative;
+        left: 8px;
+    }
+    .bi-star-fill {
+        color: gold;
+    }
+    .bi-star {
+        color: goldenrod;
+    }
+    .is {
+        background-color: lightgray;
+        height: 50vh;
+        margin-top: 20px;
+    }
+    .the {
+        font-weight: bold;
+        font-family: 'Times New Roman';
+        font-size: 30px;
+        text-align: center;
+        position: relative;
+        top: 40px;
+    }
+    .zoo {
+        margin-top: 60px;
+        text-align: center;
+    }
+    .html {
+        text-align: center;
+        margin-top: 50px;
+    }
+    .js {
+        margin-top: 20px;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+    }
+    .use {
+        font-family: sans-serif;
+    }
+    .dell {
+        font-family: cursive;
+    }
+    .as {
+        font-family: fantasy;
+    }
+    .hp {
+        font-family: monospace;
+    }
+    .es {
+        font-family: 'Lucida Sans';
+    }
+    .se {
+        font-family: cursive;
+    }
+    footer {
+        background-color: black;
+        color: white;
+        height: 70vh;
+        margin-top: 5px;
+    }
+    .tag {
+        text-align: center;
+        position: relative;
+        top: 50px;
+        font-size: 20px;
+    }
+    .user {
+        text-align: center;
+        margin-top: 70px;
+    }
+    .kid {
+        display: flex;
+        margin-left: 140px;
+    }
+    ul {
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr 3fr;
+    }
+    li {
+        margin-left: 140px;
+    }
+    dt {
+        margin-left: 133px;
+        font-weight: bold;
+        color: red;
+    }
+    h3 {
+        margin-left: 30px;
+    }
+    .mp {
+        margin-left: 20px;
+        color: white;
+        
+    }
+    .local {
+        cursor: pointer;
+    }
+    .ig:hover {
+        transform: scale3d(1,1,1);
+        transition: 2s;
+        box-shadow: 10px 10px 5px black;
+        opacity: 0.5;
+    }
+    .dob:hover {
+        transform: scale3d(1,1,1);
+        transition: 2s;
+        box-shadow: 10px 10px 5px black;
+    }
+    </style>
+</head>
+<body>
+    <header>
+            <h1>.Shopper</h1>
+            <div class="parent">
+            <span>HOME</span>
+            <span>CATLOG</span>
+            <span>PAGES</span>
+            <span>DOCS</span>
+            <span>SHOP</span>
+            <span>BLOG</span>
+            </div>
+            <div class="content">
+                <span class="bi bi-search"></span>
+                <span class="bi bi-person"></span>
+                <span class="bi bi-heart"></span>
+                <span class="bi bi-cart"></span>
+            </div>
+    </header>
+<article>
+    <div class="big">
+        <span class="bi bi-lightning-fill"></span>
+        <span>BIG BILLION SALES</span>
+        <span class="bi bi-lightning-fill"></span>
+    </div>
+</article>
+      <div class="d">
+        <img src="men.jpg" width="499" height="600" class="ig">
+        <img src="women.jpg" width="499" height="600" class="ig">
+        <img src="kids.jpg" width="499" height="600" class="ig">
+      </div>
+      <section>
+        <main>
+            <div class="men-fashion">
+                <span>men-fashion</span>
+            </div>
+            <div class="women-fashion">
+                <span>women-fashion</span>
+            </div>
+            <div class="kids-fashion">
+                <span>kids-fashion</span>
+            </div>
+        </main>
+      <div class="pg">
+        <div>
+        <span class="bi bi-truck"> Free shipping</span><br>
+        <span id="op">From all orders over $100</span>
+        </div>
+        <div>
+        <span class="bi bi-arrow-left-right"> Free Returns</span><br>
+        <span id="op">Return money within 30 days</span> 
+        </div>
+        <div>
+        <span class="bi bi-lock"> Secure shopping</span><br>
+        <span id="op">You're in safe hands</span>
+        </div>
+        <div>
+        <span class="bi bi-tag"> over 10,000 Styles</span><br>
+        <span id="op">We have everything you need</span>
+        </div>
+      </div>
+      <div class="lp">
+        <span>New collection</span>
+        <h3>Best picks 2019</h3>
+        <span>Appear, dry there darkness they're seas, dry waters thing fly midst. Beast, above fly brought Very green.</span>
+      </div>
+      <div class="local">
+        <div>
+            <img src="p1.jpg" width="700" height="400">
+            <img src="p2.jpg" width="350" height="400">
+        </div>
+        <div>
+            <img src="p4.jpg" width="350" height="400">
+            <img src="p3.jpg" width="700" height="400">
+        </div>
+        <div class="d">
+            <span id="s">Dress collection</span>
+            <span id="w">Watches</span>
+        </div>
+        <div class="k">
+            <span id="h">Mens</span>
+            <span id="m">Collections</span>
+        </div>
+      </div>
+      <h2>TOP MONTH SELLERS</h2>
+      <div class="n">
+        <span>Men</span>
+        <span>Women</span>
+        <span>Kids</span>
+      </div>
+<div class="a">
+    <div>
+        <img src="f1.jpg" width="300" height="350" class="dob">
+        <img src="f2.jpg" width="300" height="350" class="dob">
+      </div>
+        <div>
+        <img src="f3.jpg" width="300" height="350" class="dob">
+        <img src="f4.jpg" width="300" height="350" class="dob">
+      </div>
+</div>
+<div>
+    <span id="gg">New</span>
+    <span id="hh">Sale</span>
+  </div>
+  <div class="price">
+    <div>
+    <span>Shoes</span><br>
+    <span>Leather mid-heel Sandals</span><br>
+    <span>&#8377;129.00</span><br>
+    </div>
+    <div class="z">
+    <span>Dresses</span><br>
+    <span>Cotton floral print Dress</span><br>
+    <span>&#8377;149.00</span><br>
+  </div>
+  <div class="vi">
+    <span>Shoes</span><br>
+    <span>Leather sneakers</span><br>
+    <span>&#8377;159.00</span><br>
+  </div>
+  <div class="zi">
+    <span>Tops</span><br>
+    <span>Cotton-tops</span><br>
+    <span>&#8377;169.00</span><br>
+  </div>
+</div>
+<div class="llp">
+    <div class="a">
+        <div>
+            <img src="sa1.jpg" width="300" height="350" class="dob">
+            <img src="sa2.jpg" width="300" height="350" class="dob">
+          </div>
+            <div>
+            <img src="sa3.jpg" width="300" height="350" class="dob">
+            <img src="sa4.jpg" width="300" height="350" class="dob">
+          </div>
+    </div>
+    <div>
+        <span id="gg">New</span>
+        <span id="hh">Sale</span>
+      </div>
+      <div class="price">
+        <div>
+        <span>Shoes</span><br>
+        <span>Leather mid-heel Sandals</span><br>
+        <span>&#8377;129.00</span><br>
+        </div>
+        <div class="z">
+        <span>Dresses</span><br>
+        <span>Cotton floral print Dress</span><br>
+        <span>&#8377;149.00</span><br>
+      </div>
+      <div class="vi">
+        <span>Shoes</span><br>
+        <span>Leather sneakers</span><br>
+        <span>&#8377;159.00</span><br>
+      </div>
+      <div class="zi">
+        <span>Tops</span><br>
+        <span>Cotton-tops</span><br>
+        <span>&#8377;169.00</span><br>
+      </div>
+    </div>
+</div>
+<div class="kk">
+    <div>Discover more</div>
+</div>
+<div class="left">
+<div class="right">
+    <div>
+        <span>Get -50% from <br>
+        Summer Collection</span>
+    </div>
+</div>
+<div class="lol">
+    <button class="btn btn-outline-secondary">Get <span class="bi bi-arrow-right"></span></button>
+</div>
+</div>
+    <div class="oo">
+    <span id="po">What buyers say</span><br>
+    <span id="lo">Last buyers reviews</span>
+    </div>
+
+<div class="dj">
+    <div class="pm">
+     <div>
+        <img src="f3.jpg" width="50px" height="50px" id="pl">
+        </div>
+    <div class="ff">
+        <span>Shoes</span><br>
+        <span>Leather sneakers</span><br>
+        <span class="bi bi-star-fill"></span>
+        <span class="bi bi-star-fill"></span>
+        <span class="bi bi-star"></span>
+    </div>
+    <div class="off">
+        From canvas plimsolls to suede loafers, leather derby shoes to cool casual slip-ons, woven espadrilles to trendy boat shoes, we have every kind! Browse through ...
+    </div>
+    </div>
+    <div class="cm">
+        <div>
+            <img src="sa3.jpg" width="50px" height="50px" id="pl">
+            </div>
+        <div class="ff">
+            <span>Dresses</span><br>
+            <span>Cotton tops</span><br>
+            <span class="bi bi-star-fill"></span>
+            <span class="bi bi-star-fill"></span>
+            <span class="bi bi-star"></span>
+        </div>
+        <div class="off">
+            From canvas plimsolls to suede loafers, leather derby shoes to cool casual slip-ons, woven espadrilles to trendy boat shoes, we have every kind! Browse through ...
+        </div>
+    </div>
+    <div class="vm">
+        <div>
+            <img src="f1.jpg" width="50px" height="50px" id="pl">
+            </div>
+        <div class="ff">
+            <span>Sandals</span><br>
+            <span>Leather sneakers</span><br>
+            <span class="bi bi-star-fill"></span>
+            <span class="bi bi-star-fill"></span>
+            <span class="bi bi-star"></span>
+        </div>
+        <div class="off">
+            From canvas plimsolls to suede loafers, leather derby shoes to cool casual slip-ons, woven espadrilles to trendy boat shoes, we have every kind! Browse through ...
+        </div>
+    </div>
+</div>
+<div class="is">
+    <div class="the">
+       <div>@Shopper</div>
+    </div>
+    <div class="zoo">
+        Appear, dry there darkness they're seas, dry waters.
+    </div>
+    <div class="html">
+        <img src="sa1.jpg" width="100px" height="100px" class="dob">
+        <img src="sa2.jpg" width="100px" height="100px" class="dob">
+        <img src="sa3.jpg" width="100px" height="100px" class="dob">
+        <img src="sa4.jpg" width="100px" height="100px" class="dob">
+        <img src="f1.jpg" width="100px" height="100px" class="dob">
+        <img src="f2.jpg" width="100px" height="100px" class="dob">
+    </div>
+    <div class="js">
+        <div class="use"><span>MANGO</span></div>
+        <div class="hp"><span>ZARA</span></div>
+        <div class="dell"><span>USPOLO</span></div>
+        <div class="as"><span>PLUSS</span></div>
+        <div class="es"><span>RARE</span></div>
+        <div class="se"><span>REEBOOK</span></div>
+        <div><span>ADIDAS</span></div>
+    </div>
+</div>
+</section>
+<footer>
+    <div class="page">
+    <div class="tag">
+    <div>Want style ideas and Treats?</div>
+    </div>
+    <div class="user">
+     <input type="text" placeholder="Enter E-mail">
+     <button type="submit">Subscribe</button>    
+    </div>
+    <div>
+        <h3>Shopper.</h3>
+        <div class="mp">
+            <span class="bi bi-facebook"></span>
+            <span class="bi bi-youtube"></span>
+            <span class="bi bi-instagram"></span>
+        </div>
+    </div>
+   <div class="hero">
+    <ul>
+       <dt>Support</dt>
+       <dt>Shop</dt>
+       <dt>About us</dt>
+       <dt>Contact</dt>
+    </ul>
+   </div>
+   <div class="hero">
+    <ul>
+        <li>Contact us</li>
+        <li>FAQ'S</li>
+        <li>Size guide</li>
+        <li>Call us</li>
+    </ul>
+</div>
+<div class="hero">
+    <ul>
+        <li>Mens shopping</li>
+        <li>Womens shopping</li>
+        <li>Kids shopping</li>
+        <li>+91 0821222-242</li>
+    </ul>
+</div>
+<div class="hero">
+    <ul>
+        <li>Our story</li>
+        <li>Careers</li>
+        <li>Terms & Conditions</li>
+        <li>+91 9638520147</li>
+    </ul>
+</div>
+<div class="hero">
+    <ul>
+        <li>shipping & Returns</li>
+        <li>Discounts</li>
+        <li>Privacy & Policy</li>
+    </ul>
+</div> 
+    </div>
+</footer>
+</body>
+</html>
